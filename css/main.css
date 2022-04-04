@@ -1113,6 +1113,7 @@ footer p {
   #briefly .mb_doctor_area > .doctor_text {
     padding: 0 30px;
     margin: 0 auto;
+    max-width: 760px;
     width: 100%;
     font-family: 'Noto Sans CJK TC';
     font-style: normal;
