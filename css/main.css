@@ -111,8 +111,8 @@ body::-webkit-scrollbar {
   padding-top: 30px;
 }
 .header nav {
-  width: 40%;
-    margin-right: 8%;
+  width: 55%;
+  margin-right: 5%;
 }
 .header nav .menu-btn, .header nav .menu-icon {
   display: none;
@@ -144,8 +144,19 @@ body::-webkit-scrollbar {
   letter-spacing: 0.08em;
   cursor: pointer;
 }
+
 .header nav .menu li > a:hover {
   /* color: rgba(255, 255, 255, 0.5); */
+}
+
+.header nav > .menu > .social {
+  border: 0;
+}
+.header nav > .menu > .social > a {
+  display: inline-block;
+  line-height: 0;
+  padding: 19px 11px;
+  margin: 0;
 }
 
 /* index */
@@ -662,31 +673,31 @@ body::-webkit-scrollbar {
   max-width: 330px;
 }
 #story  .container > .story_article .pic_text_area {
-  display: flex;
+  /* display: flex;
   justify-content: space-between;
   font-family: 'Noto Sans TC';
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 36px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.08em; */
 }
 #story  .container > .story_article .pic_text_area > .story1_picture3 {
-  max-width: 205px;
+  max-width: 760px;
 }
 #story  .container > .story_article .pic_text_area > .story2_picture3 {
-  max-width: 229px;
+  max-width: 760px;
 }
 #story  .container > .story_article .pic_text_area img {
   width: 100%;
   border-radius: 30px;
 }
-#story  .container > .story_article .pic_text_area > .story1_text {
+/* #story  .container > .story_article .pic_text_area > .story1_text {
   max-width: 504px;
 }
 #story  .container > .story_article .pic_text_area > .story2_text {
   max-width: 495px;
-}
+} */
 
 #story  .container > .story_article .info {
   text-align: center;
@@ -903,23 +914,16 @@ footer {
 #help > .logo_area {
   display: flex;
   justify-content: space-around;
-  max-width: 1368px;
+  max-width: 600px;
   margin: 0 auto;
 }
-#help > .logo_area > .logo {
-  max-width: 288px;
-  min-width: 250px;
-  height: 78px;
-  background: rgba(24, 127, 195, 0.4);
-  font-family: 'Noto Sans TC';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 54px;
+#help > .logo_area .logo {
+  width: 270px;
+  height: 85px;
+  background: #fff;
   text-align: center;
-  letter-spacing: 0.08em;
-  padding: 12px 0px;
-  color: #FFFFFF;
+  padding: 13px;
+  border-radius: 20px;
 }
 
 footer ul {
@@ -951,6 +955,7 @@ footer ul li:last-child {
 footer ul li a {
   color: #fff;
   line-height: 15px;
+  text-decoration: none;
 }
 
 footer ul:last-child {
@@ -1065,6 +1070,10 @@ footer p {
     display: block;
     background: #EEF5F6;
   }
+  .header nav .menu .social{
+    display: flex;
+    justify-content: center;
+  }
   .header nav .menu li > a {
     margin: 0px;
     padding: 35px 0;
@@ -1080,6 +1089,9 @@ footer p {
   }
   #index > .container > .index_title {
     transform: translate(-75%, -25%);
+  }
+  #index > .container > .index_vision {
+    margin-bottom: 0px;
   }
   #index > .container > .index_title > .index_title_img {
     width: 150%;
@@ -1097,6 +1109,9 @@ footer p {
     width: 100px;
     padding: 45px 0;
   }
+  #briefly > .container > .text_area {
+    padding: 0 15px;
+  }
   #briefly > .container > .text_area > .title {
     font-size: 24px;
     line-height: 36px;
@@ -1104,7 +1119,6 @@ footer p {
   #briefly > .container > .text_area > .text {
     font-size: 15px;
     line-height: 28px;
-    padding: 0 15px;
   }
   #briefly > .container > .text_area > .sub_title {
     font-size: 15px;
@@ -1124,6 +1138,10 @@ footer p {
     letter-spacing: 0.08em;
     color: #0B3A76;
   }
+  #briefly .mb_doctor_area > .btn_div {
+    margin: 30px auto 0;
+    max-width: 164px;
+  }
 
   /* keydata */
   #keydata > .container > .text_area > .title {
@@ -1139,7 +1157,7 @@ footer p {
   }
   #keydata > .container > .report {
     padding: 18px;
-    margin: 0 12px;
+    margin: 24px 12px 0;
   }
   #keydata > .container > .report > .row_reverse {
     flex-direction: column-reverse;
@@ -1246,12 +1264,12 @@ footer p {
     font-size: 15px;
     line-height: 28px;
   }
-  #story  .container > .story_article .pic_text_area > .story1_text {
+  /* #story  .container > .story_article .pic_text_area > .story1_text {
     max-width: none;
   }
   #story  .container > .story_article .pic_text_area > .story2_text {
   max-width: none;
-}
+  } */
   #story .container > .story_article .info {
     padding: 36px 5% 60px;
   }
@@ -1328,7 +1346,7 @@ footer p {
     line-height: 30px;
   }
   .sm_btn {
-    width: 160px;
+    width: 164px;
   }
 
   #story .container > .story_article .pic_text_area > .story1_picture3 {
@@ -1389,11 +1407,13 @@ footer p {
     font-size: 21px;
     line-height: 34px;
   }
-  #help > .logo_area > .logo {
-    min-width: 174px;
-    max-height: 58px;
-    margin-bottom: 2%;
+  #help > .logo_area .logo {
+    width: 223px;
+    height: 70px;
+    margin-bottom: 15px;
+    padding: 10px;
   }
+
   footer .logo_area {
     flex-wrap: wrap;
   }

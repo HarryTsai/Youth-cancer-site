@@ -49,7 +49,7 @@
         })(window, document, 'script', 'dataLayer', 'GTM-MCMN77');</script>
     <!-- End Google Tag Manager -->
     <header class="header">
-        <a href="https://www.commonhealth.com.tw/" class="logo" data-scroll>
+        <a href="https://www.commonhealth.com.tw/" class="logo" data-scroll target="_blank">
             <div class="logo_div">
                 <img id="logo_img" class="desktop" src="./img/logo.png" alt="logo" />
                 <img id="logo_mobile_img" class="mobile" src="./img/logo_mobile.png" alt="logo" />
@@ -66,6 +66,14 @@
                 <li><a href="#birth">懷孕生子</a><img class="mobile menu_line" src="./img/short-line.png" /></li>
                 <li><a href="#story">人物故事</a><img class="mobile menu_line" src="./img/short-line.png" /></li>
                 <li onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-4')"><a href="#help">尋求協助</a></li>
+                <li class="social">
+                    <a href="https://www.facebook.com/commonhealth" target="_blank"
+                        onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'click-header-fbshare')"><img
+                            src="./img/fb.svg" /></a>
+                    <a href="https://lin.ee/reBho5o" target="_blank"
+                        onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'click-header-lineshare')"><img
+                            src="./img/line.svg" /></a>
+                </li>
             </ul>
         </nav>
     </header>
@@ -143,7 +151,7 @@
                     </div>
                 </div>
                 <div class="desktop btn_div">
-                    <a href="#" class="desktop btn">
+                    <a href="https://www.youtube.com/watch?v=YilKazAi8rw" class="desktop btn" target="_blank">
                         立即看更多
                         <i class="right_arrow"></i>
                     </a>
@@ -161,6 +169,12 @@
                 <div class="doctor_text">
                     臺北醫學大學臺北癌症中心副院長 /
                     雙和醫院癌症中心主任趙祖宜認為，青年癌友的需求不同於較年長的癌症患者，他們漫長的人生歲月都必須與癌共存，譬如要面對癌症復發及後遺症、或是共病像第二個癌症，或是治療過程可能對心血管造成傷害等，這些都需要被納入考量，事先做防範。
+                </div>
+                <div class="btn_div">
+                    <a href="https://www.youtube.com/watch?v=YilKazAi8rw" class="btn sm_btn" target="_blank">
+                        立即看更多
+                        <i class="right_arrow"></i>
+                    </a>
                 </div>
             </div>
             <div class="flower_div">
@@ -195,7 +209,8 @@
                     </div>
                     <div class="photo"><img src="./img/10-1.gif" alt="" /></div>
                 </div>
-                <div class="bottom_line"><img src="./img/deco-line.png" alt="" /></div>
+                <div class="bottom_line"><img class="desktop" src="./img/deco-line.png" alt="" /><img class="mobile"
+                        src="./img/short-line.png" alt="" /></div>
                 <div class="content">
                     <div class="text_area">
                         <div class="text_title">關鍵數據二</div>
@@ -223,8 +238,12 @@
                                     <label for="switch">
                                         <div class="toggle"></div>
                                         <div class="names">
-                                            <p class="light">我國</p>
-                                            <p class="dark">全球</p>
+                                            <p class="light"
+                                                onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-1-taiwan')">
+                                                我國</p>
+                                            <p class="dark"
+                                                onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-1-global')">
+                                                全球</p>
                                         </div>
                                     </label>
                                 </div>
@@ -340,7 +359,8 @@
                                 <iframe class="vedio" src="https://www.youtube.com/embed/8ycrCun-_R4"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen
+                                    onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-2-video')"></iframe>
                             </div>
                         </div>
                         <div class="text_area">
@@ -348,7 +368,7 @@
                                 許珮琪36歲時，正在做不孕症治療，意外發現自己確診乳癌，許珮琪難過地表示，自己是個健康寶寶，每天健身運動，從沒想過會罹癌，保險只有買儲蓄險。<br />「確診當下我覺得遺憾，怎麼沒有幫先生留下我們的小孩？」
                             </p>
                             <p>
-                                她回憶當時醫生告知化療可能影響卵子品質、卵巢受損，想生小孩要趕快預作準備：凍卵、凍胚胎做生育保存計劃，夫妻倆抓緊時間在治療前冷凍了10個胚胎。
+                                當時醫生告知化療可能影響卵子品質、卵巢受損，想生小孩要趕快預作準備：凍卵、凍胚胎做生育保存計劃，夫妻倆抓緊時間在治療前冷凍了10個胚胎。
                             </p>
                         </div>
                         <div class="picture_area">
@@ -364,29 +384,20 @@
                         </div>
                         <div>
                             <p class="text_area">
-                                罹癌讓她震驚、傷痛，治療過程跌跌撞撞，卻也帶來最大的驚喜：她植入胚胎，成功懷孕，生下可愛的女兒，實現了當媽媽的願望。每次到生殖中心照超音波拿到照片，許珮琪說「好希望超音波照片上不是肌瘤大小，是胚胎大小。」幸好第二次植入就成功，當醫生宣布「中獎」受孕成功那天，她在診間興奮歡呼，回家趕快把囤貨很久的驗孕棒拿出來。
+                                治療過程跌跌撞撞，卻也帶來最大的驚喜：她植入胚胎，成功懷孕，生下可愛的女兒，實現了當媽媽的願望。現在，每週至少兩天，她會揹著寶寶一起爬山，並把自己鍛鍊得更強壯，「我要用滿滿的愛，讓寶寶感受到這個混亂世界的美好。」這是她生子前許下的心願，希望能陪寶寶一起長大。
                             </p>
                             <div class="pic_text_area">
                                 <div class="story1_picture3">
-                                    <img class="desktop" src="./img/img-peichi-3.png" />
-                                    <img class="mobile" src="./img/mb-peichi-3.png" />
-                                </div>
-                                <div class="story1_text">
-                                    <p style="margin-bottom: 24px;">
-                                        順利生下寶寶的那一天，「2021年，重獲新生的我迎接另一個新生的一年。我以為這一生不會有這一天。」她在臉書寫下最初的感動。
-                                    </p>
-                                    <p>
-                                        現在，每週至少兩天，她會揹著寶寶一起爬山，並把自己鍛鍊得更強壯，<span
-                                            style="font-weight: 700;">「我要用滿滿的愛，讓寶寶感受到這個混亂世界的美好。」</span>這是她生子前許下的心願，希望能陪寶寶一起長大。
-                                    </p>
+                                    <img class="" src="./img/mb-peichi-3.png" />
                                 </div>
                             </div>
                             <div class="info">
                                 <div class="name">許珮琪</div>
                                 <p class="text">婚禮顧問，熱愛運動、爬山，嘗試不孕治療多年，36歲確診乳癌，透過生育保存計畫、植入冷凍胚胎成功，39歲生下一女，目前最愛背著女兒去爬山。
                                 </p>
-                                <div class="btn_div">
-                                    <a href="https://www.commonhealth.com.tw/article/85964" class="btn">
+                                <div class="btn_div"
+                                    onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-2-more')">
+                                    <a href="https://www.commonhealth.com.tw/article/85964" class="btn" target="_blank">
                                         看更多許珮琪的故事
                                         <i class="right_arrow"></i>
                                     </a>
@@ -467,8 +478,8 @@
                                             39歲罹癌覺得好孤單，沒有人能了解我
                                         </div>
                                         <div class="btn_div">
-                                            <a href="https://www.commonhealth.com.tw/article/85577" class="btn sm_btn">
-                                                立即觀看
+                                            <a href="https://bit.ly/3DGVTS1" class="btn" target="_blank">
+                                                看更多史莊敬的故事
                                                 <i class="right_arrow"></i>
                                             </a>
                                         </div>
@@ -509,15 +520,13 @@
                                 <iframe class="vedio" src="https://www.youtube.com/embed/1iAuJ5nBRug"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen
+                                    onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-3-video')"></iframe>
                             </div>
                         </div>
                         <div class="text_area">
                             <p style="margin-bottom: 24px;">
                                 大二升大三那年暑假，陳紹軒剛滿20歲，剛通過日文檢定考試，正準備資格考完就能去日本交換留學，那是他從小到大的夢想。母親卻在這時發現他脖子兩側有腫塊，就醫確診是何杰金氏淋巴癌，突如其來的癌症，夢想被迫擱置、學業被迫中斷，開始接受治療，他忍耐著治療的痛苦煎熬，1年後好不容易控制住病情，重新復學通過了資格考試，興高采烈準備赴日圓夢時，竟又被醫生宣判癌症復發。
-                            </p>
-                            <p>
-                                採訪當天，桌上一整頁密密麻麻、工整的手寫英文字，特別引人注目。是準備出國留學考試嗎？不，每一個英文名，都是與癌症搏鬥的生命印記。「這是我吃的抗癌藥，我會寫下藥名，然後上網查看最新的論文及研究報告，」陳紹軒說。
                             </p>
                         </div>
                         <div class="picture_area">
@@ -536,30 +545,19 @@
                                 治療過程中，除了經濟壓力負擔，心理上的孤單、孤獨感也不時席捲籠罩著他。「我覺得很孤獨、孤單，」他說，在醫院治療找不到同年齡的癌友，沒有併肩作戰的夥伴，家人朋友也不了解你經歷了什麼。
                             </p>
                             <p class="text_area">
-                                即使孤單，身體比以前孱弱、容易疲倦，陳紹軒依然沒有放棄探索世界的勇氣，不過這次他仔細衡量個人狀況，小心翼翼踏出每一步。
-                            </p>
-                            <p class="text_area">
-                                採訪最後，會對3年前的自己說什麼？<br />
-                                「我什麼話都不會講，會給他一個擁抱，」他笑咪咪地說。就像他去年獲選台灣癌症基金會的十大抗癌鬥士時寫下一段話：
+                                即使孤單，身體比以前孱弱、容易疲倦，陳紹軒依然沒有放棄探索世界的勇氣，不過這次他仔細衡量個人狀況，小心翼翼踏出每一步......。
                             </p>
                             <div class="pic_text_area">
-                                <div class="story2_text">
-                                    <p>
-                                        <span
-                                            style="font-weight: 700;">「我今年23歲，沒有特別的勇敢，沒有特別的不幸。喜歡運動，與人互動，有很棒的家人，好笑的朋友，還有可愛的女朋友。我今年23歲，我會好好照顧自己。」</span>
-                                        青春舞曲不必然輕快熱情，也許慢半拍，也許少了幾個音，可是各自散發精彩美麗，獨一無二。
-                                    </p>
-                                </div>
                                 <div class="story2_picture3">
-                                    <img class="desktop" src="./img/img-Shaoxuan-3.png" />
-                                    <img class="mobile" src="./img/mb-img3.png" />
+                                    <img class="" src="./img/mb-img3.png" />
                                 </div>
                             </div>
                             <div class="info">
                                 <div class="name">陳紹軒</div>
                                 <p class="text">23歲，夢想是出書以及到日本生活一段時間。3年前確診淋巴癌，目前狀況痊癒穩定，定期檢查追蹤中，剛剛取得日文系畢業證書。</p>
-                                <div class="btn_div">
-                                    <a href="https://www.commonhealth.com.tw/article/85933" class="btn">
+                                <div class="btn_div"
+                                    onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-3-more')">
+                                    <a href="https://www.commonhealth.com.tw/article/85933" class="btn" target="_blank">
                                         看更多陳紹軒的故事
                                         <i class="right_arrow"></i>
                                     </a>
@@ -622,8 +620,8 @@
                                         年輕罹癌，財務破大洞，<br class="mobile" />5問答提早準備
                                     </div>
                                     <div class="btn_div">
-                                        <a href="#" class="btn sm_btn">
-                                            立即觀看
+                                        <a href="https://bit.ly/3jg7wpn" class="btn" target="_blank">
+                                            看更多理財建議
                                             <i class="right_arrow"></i>
                                         </a>
                                     </div>
@@ -658,7 +656,8 @@
                                 <iframe class="vedio" src="https://www.youtube.com/embed/74un0QtpJ0I"
                                     title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                    allowfullscreen></iframe>
+                                    allowfullscreen
+                                    onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-4-video')"></iframe>
                             </div>
                         </div>
                         <div class="text_area">
@@ -694,8 +693,9 @@
                             <div class="info">
                                 <div class="name">白雪薇</div>
                                 <p class="text">喜歡美食、熱愛工作，30歲確診淋巴癌二期，目前正努力考取室內設計師執照。</p>
-                                <div class="btn_div">
-                                    <a href="https://www.commonhealth.com.tw/article/85965" class="btn">
+                                <div class="btn_div"
+                                    onClick="ga('send', 'event', 'web_web', 'AYA-cancer', 'section-4-more')">
+                                    <a href="https://www.commonhealth.com.tw/article/85965" class="btn" target="_blank">
                                         看更多白雪薇的故事
                                         <i class="right_arrow"></i>
                                     </a>
@@ -714,10 +714,12 @@
         <div id="help">
             <div class="title">尋求協助</div>
             <div class="logo_area">
-                <div class="logo">logo</div>
-                <div class="logo">logo</div>
-                <div class="logo">logo</div>
-                <div class="logo">logo</div>
+                <a href="https://cancer.commonhealth.com.tw/" target="_blank">
+                    <div class="logo"><img src="./img/help_1.png" /></div>
+                </a>
+                <a href="https://www.typassn.org/" target="_blank">
+                    <div class="logo"><img src="./img/help_2.png" style="position: relative;top: 11px;" /></div>
+                </a>
             </div>
         </div>
         <div>
