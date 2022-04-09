@@ -899,7 +899,6 @@ footer {
 #help {
   text-align: center;
   padding-top: 90px;
-  margin-bottom: 148px;
 }
 #help > .title {
   margin-bottom: 36px;
@@ -913,17 +912,28 @@ footer {
 }
 #help > .logo_area {
   display: flex;
-  justify-content: space-around;
-  max-width: 600px;
+  max-width: 855px;
   margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 #help > .logo_area .logo {
   width: 270px;
   height: 85px;
-  background: #fff;
+  margin: 7.5px;
+}
+
+footer > .staff_area {
+  margin: 4% auto;
+  max-width: 350px;
+  font-family: 'Noto Sans TC';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
   text-align: center;
-  padding: 13px;
-  border-radius: 20px;
+  letter-spacing: 0.08em;
+  color: #FFFFFF;
 }
 
 footer ul {
@@ -1401,17 +1411,23 @@ footer p {
     padding: 0 15px 20%;
   }
   #help {
-    margin-bottom: 15%;
+
   }
   #help > .title {
     font-size: 21px;
     line-height: 34px;
   }
+  #help > .logo_area {
+    max-width: 600px;
+  }
   #help > .logo_area .logo {
-    width: 223px;
-    height: 70px;
-    margin-bottom: 15px;
-    padding: 10px;
+    width: 175px;
+    height: 55px;
+  }
+
+  footer > .staff_area {
+    font-size: 14px;
+    line-height: 30px;
   }
 
   footer .logo_area {
